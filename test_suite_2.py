@@ -17,7 +17,7 @@ class test_module2(unittest.TestCase):
         text_elt = browser.find_element(By.TAG_NAME, "h1").text
         self.assertEqual('Congratulations! You have successfully registered!', text_elt, "text not found or match")
         browser.quit()
-        
+       
     def test_2(self):
         import time
         from selenium import webdriver
